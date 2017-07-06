@@ -1,0 +1,52 @@
+sudo apt-get update
+
+sudo apt-get upgrade
+
+sudo apt-get install python-setuptools python-dev build-essential
+
+sudo apt-get install python-pip
+
+sudo apt-get update
+
+sudo apt-get install python3.6
+
+sudo apt-get install apache2
+
+install mod-wsgi:
+sudo apt-get install libapache2-mod-wsgi python-dev
+
+enable mod-wsgi:
+sudo a2enmod wsgi 
+
+create Flaskapp:
+cd /var/www 
+
+sudo mkdir FlaskApp
+
+cd FlaskApp
+
+sudo mkdir FlaskApp
+
+cd FlaskApp
+
+sudo mkdir static templates
+sudo nano app.py
+	go to insert mode:
+		from flask import Flask
+		app = Flask(__name__)
+		@app.route("/")
+		def hello():
+			return "Hey There!"
+		if __name__ == "__main__":
+			app.run()
+
+sudo pip install virtualenv 
+
+sudo virtualenv venv
+source venv/bin/activate
+
+sudo pip install Flask
+
+sudo python app.py
+
+deactivate
