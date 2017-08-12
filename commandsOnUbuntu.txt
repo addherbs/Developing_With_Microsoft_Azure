@@ -1,3 +1,4 @@
+#Set up a New machine with flask and apache
 sudo apt-get update
 
 sudo apt-get upgrade
